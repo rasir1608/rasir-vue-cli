@@ -38,7 +38,7 @@ $h2Font:16px;
 $h3Font:14px;
 $textFont:12px;
 
-@mixin sfBtn($color,$borderColor,$backgroundColor) {
+@mixin raBtn($color,$borderColor,$backgroundColor) {
     padding: 7.5px 20px;
     margin: 0 5px;
     color:$color;
@@ -52,7 +52,7 @@ $textFont:12px;
         margin-left: 0px;
     }
 }
-@mixin sfSmallBtn($color,$borderColor,$backgroundColor) {
+@mixin raSmallBtn($color,$borderColor,$backgroundColor) {
   padding: 7.5px 12px;
   margin: 0 5px;
   color:$color;
@@ -66,20 +66,20 @@ $textFont:12px;
       margin-left: 0px;
   }
 }
-@mixin sfHover($color) {
+@mixin raHover($color) {
     &:hover {
         border-color: $color;
         background-color:$color;
     }
 }
-@mixin sfAllHover($color,$borderColor,$backgroundColor) {
+@mixin raAllHover($color,$borderColor,$backgroundColor) {
   &:hover {
       border-color: $borderColor;
       background-color:$backgroundColor;
       color:$color
   }
 }
-@mixin sfClear(){
+@mixin raClear(){
   &::after{
     content: '';
     display: block;
